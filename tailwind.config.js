@@ -7,7 +7,14 @@ module.exports = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				violet: '#5843E4',
+			},
+			backgroundColor: {
+				lilac: '#F9F9FC',
+			},
+		},
 	},
 	plugins: [],
 }

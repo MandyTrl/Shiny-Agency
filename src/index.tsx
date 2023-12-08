@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.scss'
 import Home from './pages/Home/'
+import Error from './pages/Error'
 import Survey from './pages/Survey'
 import Navbar from './components/Navbar'
-import Error from './pages/Error'
+import Profils from './pages/Profils'
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -14,7 +15,7 @@ ReactDOM.render(
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/survey" element={<Survey />} />
-				<Route path="/profils" element={<Survey />} />
+				<Route path="/profils" element={<Profils />} />
 				<Route path="*" element={<Error />} />
 			</Routes>
 		</Router>
